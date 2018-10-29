@@ -14,8 +14,18 @@ class App extends Component {
           url: "https://ord.dev.stackworx.io/health"
         },
         {
-          url: "https://google.com"
-        }
+          url: "https://cognition.dev.stackworx.cloud/api/status"
+        },
+          {
+              url: "https://api.durf.dev.stackworx.io/health"
+          },
+          {
+              url: "https://prima.run/health"
+          },
+          {
+              url: "https://stackworx.io/"
+          },
+
       ]
     };
 
@@ -49,10 +59,10 @@ class App extends Component {
               <h2>Welcome to React</h2>
           </div>
         <br />
-        <span>
-          Please add endpoint:
+        <h2>
+          Please add an endpoint:
           <BlockForm addBlock={this.addUrl} />
-        </span>
+        </h2>
         <h1>Endpoints</h1>
         <BlockList urls={this.state.urls} removeBlock={this.removeBlock} />
       </div>
